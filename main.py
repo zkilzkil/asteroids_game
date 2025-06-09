@@ -9,6 +9,9 @@ def main():
 	print(f"Screen height: {SCREEN_HEIGHT}")
 	
 if __name__ == "__main__":
+	for event in pygame.event.get():
+    	if event.type == pygame.QUIT:
+        	return
 	run_program = True
 	while run_program:
 		screen.fill((0, 0, 0))
